@@ -12,7 +12,8 @@ export default class Post extends Component {
                 <User
                     src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&w=1000&q=80"
                     alt="Prince"
-                    name="Harry the Prince"/>
+                    name="Harry the Prince"
+                    min/>
 
                 <img src={this.props.src} alt={this.props.alt}/>
 

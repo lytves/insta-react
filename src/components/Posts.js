@@ -13,7 +13,7 @@ export default class Posts extends Component {
                     alt="nature"/>
 
                 <Post
-                    src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    src="https://therightsofnature.org/wp-content/uploads/2018/01/turkey-3048299_1920.jpg"
                     alt="nature"/>
 
             </div>
