@@ -14,7 +14,7 @@ export default class InstaService {
         }
 
         return res.json();
-    }
+    };
 
     getAllPosts = async (url) => {
 

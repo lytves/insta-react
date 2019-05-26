@@ -1,7 +1,18 @@
 import React, {Component} from 'react';
 import Post from './Post';
+import InstaService from '../services/insta-service'
 
 export default class Posts extends Component {
+
+    // Class field declarations syntaxis: InstaService, state
+
+    InstaService = new InstaService();
+
+    state = {
+
+        posts:[],
+        error: false,
+    };
 
     render() {
         return (
