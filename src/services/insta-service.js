@@ -16,7 +16,7 @@ export default class InstaService {
         return res.json();
     };
 
-    getAllPosts = async (url) => {
+    getAllPosts = async () => {
 
         return  await this.getResource('/posts/');
     }
