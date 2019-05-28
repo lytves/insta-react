@@ -11,4 +11,8 @@ To emulate a REST API is used a JSON Server with mock data from the JSON file.
 You will need:
 * [Node.js](https://nodejs.org/en/)
 * [Create React App](https://facebook.github.io/create-react-app/docs/getting-started)
-* [JSON Server](https://github.com/typicode/json-server) 
+* [JSON Server](https://github.com/typicode/json-server)
+
+#### Screenshots:
+
+![](screenshot.png)
