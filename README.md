@@ -15,4 +15,4 @@ You will need:
 
 #### Screenshots:
 
-![](screenshot.png)
+![](images/screenshot.png)
