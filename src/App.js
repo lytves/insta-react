@@ -13,7 +13,7 @@ function App() {
                 {/* "exact" to make a routing only by exacting path matching,
                  without it routing will work also when is matching only some part of the path */}
                 <Route path='/' component={Feed} exact/>
-                <Route path='/profile' component={Profile}/>
+                <Route path='/profile' component={Profile} exact/>
 
             </div>
         </Router>
