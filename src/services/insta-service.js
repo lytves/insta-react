@@ -2,7 +2,6 @@ export default class InstaService {
 
     constructor() {
         this._apiBase = 'http://localhost:3001';
-
     }
 
     getResource = async (url) => {
@@ -19,5 +18,10 @@ export default class InstaService {
     getAllPosts = async () => {
 
         return await this.getResource('/posts/');
+    };
+
+    getAllUsers = async () => {
+
+        return await this.getResource('/users/');
     }
 }

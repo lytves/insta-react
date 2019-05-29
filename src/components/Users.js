@@ -1,38 +1,87 @@
-import React from 'react';
+import React, {Component} from 'react';
+import InstaService from "../services/insta-service";
+import ErrorMessage from "./ErrorMessage";
 import User from "./User";
 
-export default function Users() {
+export default class Users extends Component {
 
-    return (
-        <div className="right">
+    // Class field declarations: InstaService, state
+    InstaService = new InstaService();
 
-            <User
-                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&w=1000&q=80"
-                alt="Prince"
-                name="Harry the Prince"/>
+    state = {
+        users: [],
+        error: false
+    };
 
-            <div className="users__block">
+    componentDidMount() {
+        this.updateUsers();
+    }
+
+    updateUsers() {
+        this.InstaService.getAllUsers()
+            .then(this.onUsersLoaded)
+            .catch(this.onError)
+    }
+
+    onUsersLoaded = (users) => {
+        // will mutate the state
+        this.setState({
+            users,
+            error: false
+        })
+    };
+
+    onError = (err) => {
+        this.setState({
+            error: true
+        })
+    };
+
+    renderItems(arr) {
+
+        return arr.map(item => {
+            const {name, photo, alt, id} = item;
+
+            return (
+
+                    <User
+                        key={id}
+                        src={photo}
+                        alt={alt}
+                        name={name}
+                        min/>
+
+            )
+        });
+    }
+
+    render() {
+
+        const {error, users} = this.state;
+
+        if (error) {
+            return <ErrorMessage/>
+        }
+
+        const items = this.renderItems(users);
+
+        return (
+
+            <div className="right">
 
                 <User
                     src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&w=1000&q=80"
                     alt="Prince"
-                    name="Harry the Prince"
-                    min/>
+                    name="Harry the Prince"/>
 
-                <User
-                    src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&w=1000&q=80"
-                    alt="Prince"
-                    name="Harry the Prince"
-                    min/>
+                <div className="users__block">
 
-                <User
-                    src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&w=1000&q=80"
-                    alt="Prince"
-                    name="Harry the Prince"
-                    min/>
+                    {items}
+
+                </div>
 
             </div>
 
-        </div>
-    )
+        );
+    }
 }
