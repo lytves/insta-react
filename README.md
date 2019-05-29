@@ -11,7 +11,9 @@ You will need:
 * [Node.js](https://nodejs.org/en/)
 * [Create React App](https://facebook.github.io/create-react-app/docs/getting-started)
 * [JSON Server](https://github.com/typicode/json-server) on --port=3001
+* [React-Router](https://reacttraining.com/react-router/web/guides/quick-start)
 
 #### Screenshots:
 
 ![](images/screenshot.png)
+![](images/screenshot2.png)
