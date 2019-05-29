@@ -44,12 +44,12 @@ export default class Users extends Component {
 
             return (
 
-                    <User
-                        key={id}
-                        src={photo}
-                        alt={alt}
-                        name={name}
-                        min/>
+                <User
+                    key={id}
+                    src={photo}
+                    alt={alt}
+                    name={name}
+                    min/>
 
             )
         });
@@ -60,7 +60,7 @@ export default class Users extends Component {
         const {error, users} = this.state;
 
         if (error) {
-            return <ErrorMessage/>
+            return <ErrorMessage min/>
         }
 
         const items = this.renderItems(users);

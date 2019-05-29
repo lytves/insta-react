@@ -101,7 +101,6 @@ header {
     align-items: center;
     text-decoration: none;
     color: #000;
-    
 }
 
 .user img {
@@ -126,8 +125,15 @@ header {
 }
 
 .min img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.normal img {
+    width: 300px;
+    height: 300px;
     border-radius: 100%;
     object-fit: cover;
 }

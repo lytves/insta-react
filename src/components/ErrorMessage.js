@@ -1,20 +1,21 @@
-import React from 'react';
+import React, {Component} from 'react';
 import img from '../error.png';
 
 // other syntaxis for export default function Feed() {...}
 
-const ErrorMessage = () => {
+export default class ErrorMessage extends Component {
 
-    return (
-        // create a a layout that doesn't render itself but serves to rendering other tags inside them
-        <>
+    render() {
 
-            <img src={img} alt="Error"/>
+        return (
+            // create a a layout that doesn't render itself but serves to rendering other tags inside them
+            <div className={this.props.min ? "min" : "normal"}>
 
-        </>
+                <img  src={img} alt="Error"/>
 
-    )
+            </div>
+
+        )
+    }
 
 };
-
-export default ErrorMessage;
