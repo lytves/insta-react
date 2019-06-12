@@ -3,7 +3,7 @@
 [![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/lytves/insta-react/blob/master/LICENSE)
 [![versionreact](https://img.shields.io/badge/react-16.8.6-brightgreen.svg)](https://reactjs.org/)
 
-It's a simple React web single-page application SPA, is a working test example of the light version ot the Instagram.
+It's a simple React web single-page application SPA working example of the light version ot the Instagram.
   
 To emulate a REST API is used a JSON Server with mock data from the JSON file. 
 
