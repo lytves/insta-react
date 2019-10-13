@@ -1,0 +1,38 @@
+[
+  {
+    "name": "jessy_john",
+    "photo": "https://ksassets.timeincuk.net/wp/uploads/sites/46/2017/03/Priti-Patel-re-sized.jpg",
+    "alt": "Jessy John",
+    "id": "1"
+  },
+  {
+    "name": "abracham_mvp",
+    "photo": "https://www.loyatic.eu/wp-content/uploads/2017/11/iStock_000020004182Medium1.jpg",
+    "alt": "Abracham Mvp",
+    "id": "2"
+  },
+  {
+    "name": "angry_cat",
+    "photo": "https://images.unsplash.com/photo-1567943556786-6acea6e7f562?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80",
+    "alt": "Angry cat",
+    "id": "3"
+  },
+  {
+    "name": "real_eggs",
+    "photo": "https://www.washingtonpost.com/resizer/1RhnmRzobv_b5lzu2YIz381sV8s=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/4ZLH33AYAAI6TOHGKZYZBQX5BA.jpg",
+    "alt": "Real Eggs",
+    "id": "4"
+  },
+  {
+    "name": "katefromlviv",
+    "photo": "https://cdn.lifehack.org/wp-content/uploads/2015/01/alpha-woman-1024x768.jpeg",
+    "alt": "Katefromlviv",
+    "id": "5"
+  },
+  {
+    "name": "smoothiemaker",
+    "photo": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-how-to-make-a-smoothie-horizontal-1542310071.png?crop=0.803xw:0.923xh;0.116xw,0.00510xh&resize=480:*",
+    "alt": "Smoothiemaker",
+    "id": "6"
+  }
+]

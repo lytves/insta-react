@@ -1,7 +1,11 @@
 export default class InstaService {
 
+    // commented lines to working with json-server,
+    // now is using local json files (posts.json, users.json)
+
     constructor() {
-        this._apiBase = 'http://localhost:3001';
+        // this._apiBase = 'http://localhost:3001';
+        this._apiBase = 'http://localhost:3000';
     }
 
     getResource = async (url) => {
@@ -17,17 +21,20 @@ export default class InstaService {
 
     getAllPosts = async () => {
 
-        return await this.getResource('/posts/');
+        // return await this.getResource('/posts/');
+        return await this.getResource('/posts.json');
     };
 
     getAllUsers = async () => {
 
-        return await this.getResource('/users/');
+        // return await this.getResource('/users/');
+        return await this.getResource('/users.json');
     };
 
     getAllPhotos = async () => {
 
-        const res = await this.getResource('/posts/');
+        // const res = await this.getResource('/posts/');
+        const res = await this.getResource('/posts.json');
         return res.map(this._transformPost);
     };
 
