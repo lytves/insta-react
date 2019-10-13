@@ -5,7 +5,7 @@ export default class InstaService {
 
     constructor() {
         // this._apiBase = 'http://localhost:3001';
-        this._apiBase = '/';
+        this._apiBase = '';
     }
 
     getResource = async (url) => {
